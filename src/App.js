@@ -1,7 +1,7 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
 import React, { Component } from 'react';
-import { MyComponent } from './components/MyComponent.js'
+import { Overview } from './components/Overview.js'
 
 class App extends Component {
   constructor(props) {
@@ -23,8 +23,7 @@ class App extends Component {
    render() {
      return (
        <div>
-         <MyComponent title="React" onButtonClicked={this.countUp} />
-         <p>{this.state.count}</p>
+         <Overview />
        </div>
      )
    }
