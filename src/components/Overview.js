@@ -25,7 +25,8 @@ export class Overview extends Component {
                 <input></input>
                 <button onClick={this.addTask}>Submit</button>
                 <ul>
-                    {this.state.tasks.map(value => <li>{value}</li>)}
+                    {this.state.tasks.map(value => 
+                        <li key={value.toString()}>{value}</li>)}
                 </ul>
             </div>
         )
